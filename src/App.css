@@ -1,0 +1,87 @@
+
+body{background: rgb(179,52,23);
+  background: linear-gradient(to right, rgba(179,52,23,0.5298494397759104) , rgba(148,187,233,1) );
+}
+a{
+text-decoration:none!important;
+}
+.header{
+  position:fixed;
+  z-index: 1;
+}
+.hero-section{
+  height: 70vh;
+  width: 100%;
+  background-image: url('../public/images/car-rental-banner.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+
+}
+.hero-section::before,
+.hero-section::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset: 0;
+  opacity: 0.3;
+}
+.hero-section::before{
+  background-color: rgba(0, 0, 0, 0.749);
+}
+.hero-section::after{
+  background-color: rgba(255, 255, 255, 0.784);
+}
+.hero-section .content{
+  z-index: 1;
+}
+.offers .card-img{
+  background-image: url('https://e7.pngegg.com/pngimages/303/247/png-clipart-red-and-yellow-spotlight-turned-on-light-close-up-computer-light-effect-effect-lights.png');
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 2rem!important;
+}
+
+.contact-bg{
+  background-image: url('../public/images/contact-bg.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  height: 60vh;
+  position: relative;
+  z-index: -1;
+}
+.contact-bg::before,
+.contact-bg::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  inset: 0;
+}
+.contact-bg::before{
+  background-color: rgba(0, 0, 0, 0.316);
+}
+.contact-bg::after{
+  background-color: rgba(4, 4, 4, 0.358);
+}
+.contact-bg .content{
+  z-index: 1;
+  color: white;
+}
+.testimonials .content{
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin: 1rem;
+}
+
+.team
+.card-img{
+  /* display: none; */
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto;
+}
